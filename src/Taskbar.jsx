@@ -16,7 +16,7 @@ export default Taskbar
 
 
 function StartButton(){
-
+    
     return(
         <button className = 'startButton'>Start</button>
     );

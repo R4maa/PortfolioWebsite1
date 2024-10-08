@@ -22,13 +22,20 @@ h1 {
   background: linear-gradient(rgb(17, 88, 254), rgb(15, 44, 113));
   position: absolute;
   bottom: 0px;
+  display: inline-grid;
 }
 
 .startButton {
   width: 10%;
   height: 50px;
   background: green;
-  
+  /* display: flex;
+  align-items: center; */
+}
+
+img.resizeStartImg {
+  width: 20px;
+  height: auto;
 }
 
 .clock {

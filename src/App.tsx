@@ -1,3 +1,4 @@
+import './app.css'
 import Header from './Header.jsx'
 import Taskbar from './Taskbar.jsx'
 

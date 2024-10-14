@@ -1,6 +1,6 @@
 import './app.css'
-import Header from './Header.jsx'
-import Taskbar from './Taskbar.jsx'
+import Header from './Header.tsx'
+import Taskbar from './Taskbar.tsx'
 
 function App() {
 

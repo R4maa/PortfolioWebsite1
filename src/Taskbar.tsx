@@ -5,11 +5,9 @@ function Taskbar(){
 
     return(
         <div className = 'taskbar'>
-            <footer>
                 <StartButton />
                 <NameCard />
                 <Clock />
-            </footer>
         </div>
     );
 }
@@ -21,9 +19,8 @@ function StartButton(){
     
     return(
         <button className = 'startButton'>
-            <div className="center">
-                <h2><img className="resizeStartImg" src="xpLogo.png"></img>Start</h2>
-            </div>
+                <img className="resizeStartImg" src="xpLogo.png"></img>
+                <h2>Start</h2>
         </button>
     );
 }

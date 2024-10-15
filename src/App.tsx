@@ -6,10 +6,12 @@ function App() {
 
     return(
       <>
+      <div className='allStyle'>
         <div className='background'>
           <Header />
           <Taskbar />
         </div>
+      </div>
       </>
     );
 }
@@ -23,9 +25,9 @@ function Background() {
   return(
     <div style={{ 
       backgroundImage: `url('https://ia601007.us.archive.org/13/items/theoriginalfilesofsomewindowswallpapers/bliss%20600dpi.jpg')`,
-      backgroundSize: 'cover', // or 'contain'
-      backgroundPosition: 'center', // or other values
-      minHeight: '100vh', // Ensure the div takes up the full viewport height
+      backgroundSize: 'cover',
+      backgroundPosition: 'center', 
+      minHeight: '100vh', 
       minWidth: '100vw'
     }}>
     </div>

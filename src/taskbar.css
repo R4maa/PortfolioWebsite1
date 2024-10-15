@@ -13,15 +13,20 @@
   .startButton {
     width: 150px;
     height: 50px;
-    background: green;
+    background: linear-gradient(rgb(0, 184, 0), green);
+
+    color: white;
 
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
+
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 111, 0);
   }
 
-  img.resizeStartImg {
+  img.resizeImg {
     width: 20px;
     height: auto;
   }
@@ -52,9 +57,13 @@
     box-sizing: border-box;
     border: 2px solid rgb(74, 128, 255);
     border-right: 1px solid rgb(13, 23, 46);
+
+    overflow: hidden;
+    white-space: nowrap;
+
   }
   
-  .githubButton {
+  .taskbarButton {
     width: 10%;
     height: 50px;
     background: linear-gradient(rgb(14, 86, 255), rgb(40, 79, 170));
@@ -65,8 +74,23 @@
     box-sizing: border-box;
     border: 2px solid rgb(74, 128, 255);
     border-left: 1px solid rgb(13, 23, 46);
-    border-right: 1px solid rgb(13, 23, 46)
+    border-right: 1px solid rgb(13, 23, 46);
+
+    overflow: hidden;
+    white-space: nowrap;
   }
 
-  
 
+/* Link Styling inside taskbarButton */
+a:link,
+a:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: rgb(165, 165, 165);
+    background-color: transparent;
+}

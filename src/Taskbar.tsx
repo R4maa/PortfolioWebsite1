@@ -8,6 +8,7 @@ function Taskbar(){
                 <StartButton />
                 <NameCard />
                 <Github />
+                <LinkedIn />
                 <Clock />
         </div>
     );
@@ -20,7 +21,7 @@ function StartButton(){
     
     return(
         <button className = 'startButton'>
-                <img className="resizeStartImg" src="xpLogo.png"></img>
+                <img className="resizeImg" src="xpLogo.png"></img>
                 <h2>Start</h2>
         </button>
     );
@@ -55,10 +56,19 @@ function NameCard() {
 
 function Github() {
     return (
-        <a className = 'githubButton' href="https://github.com/R4maa">
-            <img className="resizeStartImg" src="github.png"></img>
+        <a className = 'taskbarButton' href="https://github.com/R4maa">
+            <img className="resizeImg" src="github.png"></img>
             <p>Github</p>
         </a>
-        
+    );
+}
+
+
+function LinkedIn() {
+    return (
+        <a className = 'taskbarButton' href="https://www.linkedin.com/in/amar-razzaq/">
+            <img className="resizeImg" src="linkedIn.png"></img>
+            <p>LinkedIn</p>
+        </a>
     );
 }

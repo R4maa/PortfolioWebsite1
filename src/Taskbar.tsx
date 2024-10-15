@@ -7,6 +7,7 @@ function Taskbar(){
         <div className = 'taskbar'>
                 <StartButton />
                 <NameCard />
+                <Github />
                 <Clock />
         </div>
     );
@@ -49,5 +50,15 @@ function NameCard() {
         <div className="nameCard">
             <p>Amar Razzaq</p>
         </div>
+    );
+}
+
+function Github() {
+    return (
+        <a className = 'githubButton' href="https://github.com/R4maa">
+            <img className="resizeStartImg" src="github.png"></img>
+            <p>Github</p>
+        </a>
+        
     );
 }

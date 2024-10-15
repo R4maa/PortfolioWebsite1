@@ -1,5 +1,5 @@
 import './app.css'
-import Header from './Header.tsx'
+import Desktop from './Desktop.tsx'
 import Taskbar from './Taskbar.tsx'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <>
       <div className='allStyle'>
         <div className='background'>
-          <Header />
+          <Desktop />
           <Taskbar />
         </div>
       </div>

@@ -15,20 +15,24 @@
     height: 50px;
     background: linear-gradient(rgb(0, 184, 0), green);
 
+    /* Text Color */
     color: white;
 
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+
+    padding-left: 5px;
 
     box-sizing: border-box;
-    border: 2px solid rgb(0, 111, 0);
+    border: 2px solid rgb(0, 128, 0);
   }
 
   img.resizeImg {
     width: 20px;
     height: auto;
+    padding-right: 3px;
   }
   
   .clock {
@@ -51,11 +55,14 @@
     background: linear-gradient(rgb(14, 86, 255), rgb(40, 79, 170));
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+
+    padding-left: 5px;
 
     /* Border */
     box-sizing: border-box;
     border: 2px solid rgb(74, 128, 255);
+    border-left: 1px solid rgb(13, 23, 46);
     border-right: 1px solid rgb(13, 23, 46);
 
     overflow: hidden;
@@ -69,7 +76,9 @@
     background: linear-gradient(rgb(14, 86, 255), rgb(40, 79, 170));
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+
+    padding-left: 5px;
 
     box-sizing: border-box;
     border: 2px solid rgb(74, 128, 255);

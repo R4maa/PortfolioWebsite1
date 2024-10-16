@@ -5,7 +5,10 @@ function Desktop() {
     return(
         <div className='desktop'>
             <DesktopIcon />
-            <a href='#'>test</a>
+            <DesktopIcon />
+            <DesktopIcon />
+            <DesktopIcon />
+            
         </div>
     );
 }
@@ -15,6 +18,8 @@ export default Desktop
 
 function DesktopIcon() {
     return(
-        <p>hello world!</p>
+        <a className='folder' href=''>
+            <img className='folderResize' src='./Folder_Icon.svg.png'></img>
+        </a>
     );
 }

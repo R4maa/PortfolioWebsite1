@@ -3,11 +3,17 @@ import './desktop.css'
 function Desktop() {
 
     return(
-        <>
-            <p className='desktop'> hello world</p>
-            <h1>test 1</h1>
-        </>
+        <div className='desktop'>
+            <DesktopIcon />
+        </div>
     );
 }
 
 export default Desktop
+
+
+function DesktopIcon() {
+    return(
+        <p>DEKSTOP ICON TEST</p>
+    );
+}

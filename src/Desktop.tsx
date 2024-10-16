@@ -15,6 +15,6 @@ export default Desktop
 
 function DesktopIcon() {
     return(
-        <p>DEKSTOP ICON TEST</p>
+        <p>hello world!</p>
     );
 }

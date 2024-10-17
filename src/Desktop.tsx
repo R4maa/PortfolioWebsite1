@@ -8,7 +8,6 @@ function Desktop() {
             <DesktopIcon />
             <DesktopIcon />
             <DesktopIcon />
-            
         </div>
     );
 }

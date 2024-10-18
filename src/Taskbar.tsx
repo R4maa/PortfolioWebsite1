@@ -21,8 +21,8 @@ function StartButton(){
 
     return(
         <button className = 'startButton'>
-                <img className="resizeImg" src="xpLogo.png"></img>
-                <h2>Start</h2>
+            <img className="resizeImg" src="xpLogo.png"></img>
+            <h2>Start</h2>
         </button>
     );
 }
@@ -47,7 +47,7 @@ function Clock(){
 
 
 function NameCard() {
-    
+
     return(
         <div className="nameCard">
             <p>Amar Razzaq</p>

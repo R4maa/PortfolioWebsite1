@@ -91,15 +91,14 @@
 
 
 /* Link Styling inside taskbarButton */
-a:link,
-a:visited {
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    text-decoration: none;
+.taskbar a:link, a:visited {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none !important;
 }
 
-a:hover,
-a:active {
-    color: rgb(165, 165, 165);
-    background-color: transparent;
+.taskbar a:hover, a:active {
+  color: rgb(165, 165, 165);
+  background-color: transparent;
+  text-decoration: none !important;
 }

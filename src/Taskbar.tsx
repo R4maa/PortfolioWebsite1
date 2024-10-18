@@ -7,8 +7,8 @@ function Taskbar(){
         <div className = 'taskbar'>
                 <StartButton />
                 <NameCard />
-                <Github />
-                <LinkedIn />
+                <Github link ="https://github.com/R4maa"/>
+                <LinkedIn link="https://www.linkedin.com/in/amar-razzaq/"/>
                 <Clock />
         </div>
     );
@@ -18,7 +18,7 @@ export default Taskbar
 
 // TODO: Add startbutton functionality 
 function StartButton(){
-    
+
     return(
         <button className = 'startButton'>
                 <img className="resizeImg" src="xpLogo.png"></img>
@@ -47,6 +47,7 @@ function Clock(){
 
 
 function NameCard() {
+    
     return(
         <div className="nameCard">
             <p>Amar Razzaq</p>
@@ -54,9 +55,10 @@ function NameCard() {
     );
 }
 
-function Github() {
+function Github( {link} ) {
+
     return (
-        <a className = 'taskbarButton' href="https://github.com/R4maa">
+        <a className = 'taskbarButton' href={link}>
             <img className="resizeImg" src="github.png"></img>
             <p>Github</p>
         </a>
@@ -64,9 +66,10 @@ function Github() {
 }
 
 
-function LinkedIn() {
+function LinkedIn( {link} ) {
+
     return (
-        <a className = 'taskbarButton' href="https://www.linkedin.com/in/amar-razzaq/">
+        <a className = 'taskbarButton' href={link}>
             <img className="resizeImg" src="linkedIn.png"></img>
             <p>LinkedIn</p>
         </a>

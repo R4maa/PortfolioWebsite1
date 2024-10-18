@@ -4,10 +4,12 @@ function Desktop() {
 
     return(
         <div className='desktop'>
-            <DesktopIcon />
-            <DesktopIcon />
-            <DesktopIcon />
-            <DesktopIcon />
+            <div className='folderLayout'>
+                <DesktopIcon />
+                <DesktopIcon />
+                <DesktopIcon />
+                <DesktopIcon />
+            </div>
         </div>
     );
 }

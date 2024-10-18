@@ -3,21 +3,22 @@
     top: 0px;
     width: 100%;
     height: auto;
-    display: flex;
+    /* display: flex;    NOTE: flex needs to be removed here for folderLayout and justify-content to work  */
 }
 
 .folder {
     display: flex;
     align-items: center;
     flex-direction: row;
+    padding-right: 10px;
 }
 
 .folderResize {
-    width: 50px;
-    height: 50px;
+    width: 85px;
+    height: auto;
 }
 
 .folderLayout {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }

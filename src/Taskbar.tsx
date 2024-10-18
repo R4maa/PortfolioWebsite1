@@ -20,10 +20,17 @@ export default Taskbar
 function StartButton(){
 
     return(
-        <button className = 'startButton'>
-            <img className="resizeImg" src="xpLogo.png"></img>
-            <h2>Start</h2>
-        </button>
+        <div className="dropup">
+            <button className = 'startButton'>
+                <img className="resizeImg" src="xpLogo.png"></img>
+                <h2>Start</h2>
+            </button>
+            <div className="dropup-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
     );
 }
 

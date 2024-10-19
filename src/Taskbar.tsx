@@ -19,13 +19,34 @@ export default Taskbar
 // TODO: Add startbutton functionality 
 function StartButton(){
 
+    const [show, setShow] = useState(false);
+
+    function showStartMenu() {
+        setShow(!show);
+    }
+
     return(
-        <button className = 'startButton'>
-            <img className="resizeImg" src="xpLogo.png"></img>
-            <h2>Start</h2>
-        </button>
+            <button className = 'startButton' onClick={showStartMenu}>
+                <img className="resizeImg" src="xpLogo.png"></img>
+                <h2>Start</h2>
+                <div className="dropup">
+                    { show ? <StartDropUp/> : null }
+                </div>
+            </button>
     );
 }
+
+function StartDropUp(){
+
+    return(
+        <div className="dropup-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    );
+}
+
 
 
 function Clock(){
@@ -55,7 +76,7 @@ function NameCard() {
     );
 }
 
-function Github( {link} ) {
+function Github( {link} : {link:string} ) {
 
     return (
         <a className = 'taskbarButton' href={link}>
@@ -66,8 +87,8 @@ function Github( {link} ) {
 }
 
 
-function LinkedIn( {link} ) {
-
+function LinkedIn( {link} : {link:string} ) {
+    
     return (
         <a className = 'taskbarButton' href={link}>
             <img className="resizeImg" src="linkedIn.png"></img>

@@ -9,19 +9,18 @@
     display: flex;
     
   }
-  
-  .dropup {
-    position: relative;
-    display: inline-block;
-  }
 
+  img.resizeImg {
+    width: 20px;
+    height: auto;
+    padding-right: 3px;
+  }
 
   .startButton {
     width: 150px;
     height: 50px;
     background: linear-gradient(rgb(0, 184, 0), green);
 
-    /* Text Color */
     color: white;
 
     display: flex;
@@ -34,44 +33,24 @@
     box-sizing: border-box;
     border: 2px solid rgb(0, 128, 0);
   }
+  
+  .dropup {
+    position: absolute;
+    display: grid;
+    
+    bottom: 50px;
+    left: 0;  
+  }
 
   .dropup-content {
-    display: none;
-    position: absolute;
-    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
     background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    min-width: 300px;
   }
 
-  .dropup-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  /* Change color of dropup links on hover */
-  .dropup-content a:hover {background-color: #ddd}
-
-  /* Show the dropup menu on hover */
-  .dropup:hover .dropup-content {
-    display: block;
-  }
-
-  .dropup:hover .startButton {
-    background-color: #2980B9;
-  }
-
-
-
-  img.resizeImg {
-    width: 20px;
-    height: auto;
-    padding-right: 3px;
-  }
-  
   .clock {
     width: 125px;
     height: 50px;
@@ -126,16 +105,15 @@
     white-space: nowrap;
   }
 
-
-/* Link Styling inside taskbarButton */
-.taskbar a:link, a:visited {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: none !important;
-}
-
-.taskbar a:hover, a:active {
-  color: rgb(165, 165, 165);
-  background-color: transparent;
-  text-decoration: none !important;
-}
+  /* Link Styling inside taskbarButton */
+  .taskbar a:link, a:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none !important;
+  }
+  
+  .taskbar a:hover, a:active {
+    color: rgb(165, 165, 165);
+    background-color: transparent;
+    text-decoration: none !important;
+  }

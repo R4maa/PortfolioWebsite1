@@ -1,8 +1,8 @@
 # My Website
 
-Hi :3
+Hi :D
 
-idk how you saw this but here is a cat!
+idk how you got here  but here is a cat!
 
 ```
    /\ /\

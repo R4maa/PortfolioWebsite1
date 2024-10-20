@@ -19,7 +19,7 @@ export default Desktop
 
 function DesktopIcon() {
     return(
-        <a className='folder' href=''>
+        <a className='folder' href='#' target="_blank">
             <img className='folderResize' src='./Folder_Icon.svg.png'></img>
         </a>
     );

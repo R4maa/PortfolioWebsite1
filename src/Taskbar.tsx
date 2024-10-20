@@ -41,14 +41,13 @@ function StartDropUp(){
     return(
         <div className="dropup-content">
             <h2>Projects</h2>
-            {/* ------------------------------------------------- Maybe add <hr> here for seperation and style? */}
-            <a className="dropup-item" href="#">
+            <a className="dropup-item" href="#" target="_blank">
                 <p>Link 1</p>
             </a>
-            <a className="dropup-item" href="#">
+            <a className="dropup-item" href="#" target="_blank">
                 <p>Link 2</p>
             </a>
-            <a className="dropup-item" href="#">
+            <a className="dropup-item" href="#" target="_blank">
                 <p>Link 3</p>
             </a>
         </div>
@@ -87,7 +86,7 @@ function NameCard() {
 function Github( {link} : {link:string} ) {
 
     return (
-        <a className = 'taskbarButton' href={link}>
+        <a className = 'taskbarButton' href={link} target="_blank">
             <img className="resizeImg" src="github.png"></img>
             <p>Github</p>
         </a>
@@ -98,7 +97,7 @@ function Github( {link} : {link:string} ) {
 function LinkedIn( {link} : {link:string} ) {
     
     return (
-        <a className = 'taskbarButton' href={link}>
+        <a className = 'taskbarButton' href={link} target="_blank">
             <img className="resizeImg" src="linkedIn.png"></img>
             <p>LinkedIn</p>
         </a>

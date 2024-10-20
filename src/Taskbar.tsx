@@ -40,9 +40,16 @@ function StartDropUp(){
 
     return(
         <div className="dropup-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <h2>Projects</h2>
+            <a className="dropup-item" href="#">
+                <p>Link 1</p>
+            </a>
+            <a className="dropup-item" href="#">
+                <p>Link 2</p>
+            </a>
+            <a className="dropup-item" href="#">
+                <p>Link 3</p>
+            </a>
         </div>
     );
 }

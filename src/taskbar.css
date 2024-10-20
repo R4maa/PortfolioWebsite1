@@ -36,7 +36,7 @@
   
   .dropup {
     position: absolute;
-    display: grid;
+    /* display: flex; */
     
     bottom: 50px;
     left: 0;  
@@ -47,9 +47,31 @@
     flex-direction: column;
     align-items: flex-start;
 
-    background-color: #f1f1f1;
     min-width: 300px;
+    
+    background: #fbefc5;
   }
+
+  .dropup-item{
+    padding: 0px 10px;
+    
+    color: black !important;
+
+    /* FUCKING MOVES TEXT BOX?>???
+    width: 50px; */
+  }
+
+  .dropup-content h2 {
+    color: black;
+    padding: 10px 0px;
+    
+    margin: 5px;
+    
+    /* ---------------------- FIX THIS  */
+    /* box-sizing: border-box;
+    border: 2px solid rgb(0, 128, 0); */
+  }
+
 
   .clock {
     width: 125px;

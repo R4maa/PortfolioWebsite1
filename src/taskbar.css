@@ -55,21 +55,20 @@
   .dropup-item{
     padding: 0px 10px;
     
-    color: black !important;
+    display: flex;
+    width: 100%;
 
-    /* FUCKING MOVES TEXT BOX?>???
-    width: 50px; */
+    color: black !important;
   }
 
   .dropup-content h2 {
     color: black;
     padding: 10px 0px;
-    
+  
     margin: 5px;
     
-    /* ---------------------- FIX THIS  */
-    /* box-sizing: border-box;
-    border: 2px solid rgb(0, 128, 0); */
+    display: flex;
+    width: 100%;
   }
 
 

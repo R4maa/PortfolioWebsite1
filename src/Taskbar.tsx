@@ -41,6 +41,7 @@ function StartDropUp(){
     return(
         <div className="dropup-content">
             <h2>Projects</h2>
+            {/* ------------------------------------------------- Maybe add <hr> here for seperation and style? */}
             <a className="dropup-item" href="#">
                 <p>Link 1</p>
             </a>

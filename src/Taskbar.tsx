@@ -16,7 +16,7 @@ function Taskbar(){
 
 export default Taskbar
 
-// TODO: Add startbutton functionality 
+
 function StartButton(){
 
     const [show, setShow] = useState(false);

@@ -49,7 +49,7 @@
 
     min-width: 300px;
     
-    background: linear-gradient(#ffe68e, #ffefb3);
+    background: linear-gradient(to bottom right,#ffe68e, #ffeba3);
 
     /* background: #fbefc5; */
   }
@@ -57,7 +57,7 @@
   .dropup-content hr {
     margin: 0;
     
-    width: 175px;
+    width: 180px;
     height: 2px;
 
     background: linear-gradient(to right, #ffe27b, #ffdc5e00);

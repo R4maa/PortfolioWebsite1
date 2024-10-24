@@ -49,8 +49,21 @@
 
     min-width: 300px;
     
-    background: #fbefc5;
+    background: linear-gradient(#ffe68e, #ffefb3);
+
+    /* background: #fbefc5; */
   }
+
+  .dropup-content hr {
+    margin: 0;
+    
+    width: 175px;
+    height: 2px;
+
+    background: linear-gradient(to right, #ffe27b, #ffdc5e00);
+    border: none;
+  }
+
 
   .dropup-item{
     padding: 0px 10px;

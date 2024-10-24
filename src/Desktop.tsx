@@ -21,7 +21,7 @@ export default Desktop
 function DesktopIcon( {projectName} : {projectName:any} ) {
     return(
         <div className='folderExternal'>
-            <a className='folder' href='#' target="_blank">
+            <a className='folder' href="#" target="_blank">
                 <img className='folderResize' src='./Folder_Icon.svg.png'></img>
             </a>
             <p>{projectName}</p>

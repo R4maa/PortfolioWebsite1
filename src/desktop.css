@@ -9,12 +9,20 @@
 .folderExternal {
     display: flex;
     flex-direction: column;
+    
 }
 
 .folderExternal p {
-    margin: 0;
+    width: 85px;
+    
     display: flex;
+
+    text-align: center;
     justify-content: center;
+
+    margin: 0;
+    
+    text-wrap: pretty;
 }
 
 .folder {
@@ -32,4 +40,5 @@
 .folderLayout {
     display: flex;
     justify-content: start;
+    
 }

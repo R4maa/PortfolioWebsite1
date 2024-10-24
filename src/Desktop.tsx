@@ -1,5 +1,5 @@
 import './desktop.css'
-import { projectList } from './projects';
+import { projectList } from './data';
 
 function Desktop() { 
 
@@ -7,9 +7,9 @@ function Desktop() {
         <div className='desktop'>
             <div className='folderLayout'>
                 <DesktopIcon projectName={projectList[0].name}/>
-                <DesktopIcon projectName="project2"/>
-                <DesktopIcon projectName="project3"/>
-                <DesktopIcon projectName="project4"/>
+                <DesktopIcon projectName={projectList[1].name}/>
+                <DesktopIcon projectName={projectList[2].name}/>
+                <DesktopIcon projectName={projectList[3].name}/>
             </div>
         </div>
     );

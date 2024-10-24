@@ -1,5 +1,7 @@
 import { useState } from "react";
 import './taskbar.css'
+import { projectList } from './data';
+
 
 function Taskbar(){
 
@@ -41,16 +43,21 @@ function StartDropUp(){
     return(
         <div className="dropup-content">
             <h2>Projects</h2>
-            <a className="dropup-item" href="#" target="_blank">
-                <p>Link 1</p>
-            </a>
-            <a className="dropup-item" href="#" target="_blank">
-                <p>Link 2</p>
-            </a>
-            <a className="dropup-item" href="#" target="_blank">
-                <p>Link 3</p>
-            </a>
+            <ProjectLink projectIndex={0}/>
+            <ProjectLink projectIndex={1}/>
+            <ProjectLink projectIndex={2}/>
+            <ProjectLink projectIndex={3}/>
         </div>
+    );
+}
+
+function ProjectLink( {projectIndex} : {projectIndex:any}) {
+    const project = projectList[projectIndex];
+
+    return(
+        <a className="dropup-item" href={project.link} target="_blank">
+            <p>{project.name}</p>
+        </a>
     );
 }
 

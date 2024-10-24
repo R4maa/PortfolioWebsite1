@@ -6,11 +6,30 @@
     /* display: flex;    NOTE: flex needs to be removed here for folderLayout and justify-content to work  */
 }
 
+.folderExternal {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.folderExternal p {
+    width: 85px;
+    
+    display: flex;
+
+    text-align: center;
+    justify-content: center;
+
+    margin: 0;
+    
+    text-wrap: pretty;
+}
+
 .folder {
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding-right: 10px;
+    /* padding-right: 10px; */
 }
 
 .folderResize {
@@ -21,4 +40,5 @@
 .folderLayout {
     display: flex;
     justify-content: start;
+    
 }

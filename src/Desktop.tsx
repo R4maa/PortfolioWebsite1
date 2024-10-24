@@ -1,14 +1,15 @@
 import './desktop.css'
+import { projectList } from './data';
 
-function Desktop() {
+function Desktop() { 
 
     return(
         <div className='desktop'>
             <div className='folderLayout'>
-                <DesktopIcon />
-                <DesktopIcon />
-                <DesktopIcon />
-                <DesktopIcon />
+                <DesktopIcon projectIndex={0}/>
+                <DesktopIcon projectIndex={1}/>
+                <DesktopIcon projectIndex={2}/>
+                <DesktopIcon projectIndex={3}/>
             </div>
         </div>
     );
@@ -17,10 +18,15 @@ function Desktop() {
 export default Desktop
 
 
-function DesktopIcon() {
+function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
+    const project = projectList[projectIndex];
+
     return(
-        <a className='folder' href='#' target="_blank">
-            <img className='folderResize' src='./Folder_Icon.svg.png'></img>
-        </a>
+        <div className='folderExternal'>
+            <a className='folder' href={project.link} target="_blank">
+                <img className='folderResize' src='./Folder_Icon.svg.png'></img>
+            </a>
+            <p>{project.name}</p>
+        </div>
     );
 }

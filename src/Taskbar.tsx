@@ -43,9 +43,13 @@ function StartDropUp(){
     return(
         <div className="dropup-content">
             <h2>Projects</h2>
+            <hr />
             <ProjectLink projectIndex={0}/>
+            <hr />
             <ProjectLink projectIndex={1}/>
+            <hr />
             <ProjectLink projectIndex={2}/>
+            <hr />
             <ProjectLink projectIndex={3}/>
         </div>
     );

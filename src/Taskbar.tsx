@@ -59,9 +59,11 @@ function ProjectLink( {projectIndex} : {projectIndex:any}) {
     const project = projectList[projectIndex];
 
     return(
+        <div className="startLinkStyle">
         <a className="dropup-item" href={project.link} target="_blank">
             <p>{project.name}</p>
         </a>
+        </div>
     );
 }
 

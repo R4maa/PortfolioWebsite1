@@ -42,7 +42,7 @@ function StartDropUp(){
 
     return(
         <div className="dropup-content">
-            <h2>Projects</h2>
+            <h2>Projects Quick Start</h2>
             <hr style={{width: "285px", background: "linear-gradient(to right, #ffd438, #ffdc5e00)"} }></hr>
             <ProjectLink projectIndex={0}/>
             <hr />

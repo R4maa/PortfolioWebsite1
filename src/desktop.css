@@ -56,4 +56,11 @@
     top: 10vh;
 
     background: red;
+
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 10px;
+    border: blue;
+
 }
+

@@ -5,13 +5,13 @@ function Desktop() {
 
     return(
         <div className='desktop'>
+                <ProjectWindow />
             <div className='folderLayout'>
                 <DesktopIcon projectIndex={0}/>
                 <DesktopIcon projectIndex={1}/>
                 <DesktopIcon projectIndex={2}/>
                 <DesktopIcon projectIndex={3}/>
             </div>
-                <ProjectWindow />
         </div>
     );
 }
@@ -36,7 +36,7 @@ function ProjectWindow() {
     
     return(
         <div className='testBox'>
-            
+
         </div>
     );
 }

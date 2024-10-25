@@ -43,3 +43,13 @@
     
 }
 
+.testBox {
+    display: flex;
+    width: 50%;
+    height: 60vh;
+
+    position: fixed;
+    left: 40vw;
+
+    background: red;
+}

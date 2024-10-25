@@ -11,6 +11,7 @@ function Desktop() {
                 <DesktopIcon projectIndex={2}/>
                 <DesktopIcon projectIndex={3}/>
             </div>
+                <ProjectWindow />
         </div>
     );
 }
@@ -34,6 +35,6 @@ function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
 function ProjectWindow() {
     
     return(
-        <p className='testBox'></p>
+        <p className='testBox'>testBox</p>
     );
 }

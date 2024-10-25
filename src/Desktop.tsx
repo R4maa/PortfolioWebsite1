@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './desktop.css'
 import { projectList } from './data';
 
@@ -33,10 +34,15 @@ function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
 }
 
 function ProjectWindow() {
-    
+    const [show, setShow] = useState(false);
+
+    function showProjectWindow() {
+        setShow(!show);
+    }
+
     return(
         <div className='testBox'>
-
+            { show ? <ProjectWindow/> : null }
         </div>
     );
 }

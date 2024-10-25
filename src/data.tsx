@@ -6,8 +6,8 @@ export const projectList = [{
     link:'https://github.com/R4maa/PortfolioWebsite1'
 }, {
     name:'TV Production Internal Tool',
-    link:''
+    link:'#'
 }, {
     name:'Test 4',
-    link:''
+    link:'#'
 }]

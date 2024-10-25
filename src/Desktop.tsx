@@ -30,3 +30,10 @@ function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
         </div>
     );
 }
+
+function ProjectWindow() {
+    
+    return(
+        <p className='testBox'></p>
+    );
+}

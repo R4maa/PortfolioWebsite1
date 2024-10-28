@@ -47,10 +47,9 @@ function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
             </div>
         );
     }
-
 }
 
-function ProjectWindow( {projectIndex} : {projectIndex:any}) {
+function ProjectWindow( {projectIndex} : {projectIndex:any} ) {
     const project = projectList[projectIndex];  // Allows project.name to be called
 
     return(

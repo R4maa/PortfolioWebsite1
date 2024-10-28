@@ -55,6 +55,7 @@ function ProjectWindow( {projectIndex} : {projectIndex:any} ) {
     return(
         <div className='testBox'>
             <p>{projectIndex}</p>
+            <p>{project.description}</p>
         </div>
     );
 }

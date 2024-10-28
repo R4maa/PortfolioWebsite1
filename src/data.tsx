@@ -1,6 +1,6 @@
 export const projectList = [{
     name:'Flok App',
-    link:'https://github.com/CR1SI/flokapp',
+    link:'https://github.com/R4maa/FlockAppShellHacks2024',
     description:'flok desc'
 }, {
     name:'Personal Website',

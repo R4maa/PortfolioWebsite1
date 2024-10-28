@@ -20,7 +20,8 @@ export default Desktop
 
 
 function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
-    const project = projectList[projectIndex];  //sets project Index to project
+    const project = projectList[projectIndex];  //sets projectIndex to project (for project.name)
+    
     const [show, setShow] = useState(false);    // Bool to show project window
 
     function showProjectWindow() {

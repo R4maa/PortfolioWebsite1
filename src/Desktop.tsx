@@ -6,7 +6,6 @@ function Desktop() {
 
     return(
         <div className='desktop'>
-                <ProjectWindow />
             <div className='folderLayout'>
                 <DesktopIcon projectIndex={0}/>
                 <DesktopIcon projectIndex={1}/>
@@ -21,28 +20,41 @@ export default Desktop
 
 
 function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
-    const project = projectList[projectIndex];
-
-    return(
-        <div className='folderExternal'>
-            <a className='folder' href={project.link} target="_blank">
-                <img className='folderResize' src='./Folder_Icon.svg.png'></img>
-            </a>
-            <p>{project.name}</p>
-        </div>
-    );
-}
-
-function ProjectWindow() {
-    const [show, setShow] = useState(false);
+    const project = projectList[projectIndex];  //sets project Index to project
+    const [show, setShow] = useState(false);    // Bool to show project window
 
     function showProjectWindow() {
         setShow(!show);
     }
 
     return(
+        <>
+        <div className='folderExternal'>
+            <a className='folder' onClick={showProjectWindow}>
+                <img className='folderResize' src='./Folder_Icon.svg.png'></img>
+            </a>
+            <p>{project.name}</p>
+        </div>
+        <ProjectWindowControl />
+        </>
+    );
+
+    function ProjectWindowControl() {
+        return(
+            <div>
+                { show ? <ProjectWindow projectIndex={projectIndex}/> : null }
+            </div>
+        );
+    }
+
+}
+
+function ProjectWindow( {projectIndex} : {projectIndex:any}) {
+    const project = projectList[projectIndex];  // Allows project.name to be called
+
+    return(
         <div className='testBox'>
-            { show ? <ProjectWindow/> : null }
+            <p>{projectIndex}</p>
         </div>
     );
 }

@@ -70,6 +70,12 @@
     
     display: flex;
     width: 90%;
+
+    color: black !important;
+  }
+
+  .dropup-item:hover {
+    color: rgb(139, 139, 139) !important;
   }
 
   .dropup-content h2 {
@@ -146,18 +152,6 @@
   
   .taskbar a:hover, a:active {
     color: rgb(165, 165, 165);
-    background-color: transparent;
-    text-decoration: none !important;
-  }
-
-  .startLinkStyle a:link, a:visited {
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    text-decoration: none !important;
-  }
-    
-  .startLinkStyle a:hover, a:active {
-    color: rgb(84, 84, 84);
     background-color: transparent;
     text-decoration: none !important;
   }

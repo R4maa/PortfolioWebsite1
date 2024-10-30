@@ -40,6 +40,8 @@
 .folderLayout {
     display: flex;
     justify-content: start;
+    width: 40%;
+    flex-wrap: wrap;
     
 }
 
@@ -59,6 +61,5 @@
     border-style: solid;
     border-width: 10px;
     border: blue;
-
 }
 

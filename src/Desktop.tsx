@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './desktop.css'
 import { projectList } from './data';
 
@@ -19,14 +20,42 @@ export default Desktop
 
 
 function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
-    const project = projectList[projectIndex];
+    const project = projectList[projectIndex];  //sets projectIndex to project (for project.name)
+    
+    const [show, setShow] = useState(false);    // Bool to show project window
+
+    function showProjectWindow() {
+        setShow(!show);
+    }
 
     return(
+        <>
         <div className='folderExternal'>
-            <a className='folder' href={project.link} target="_blank">
+            <a className='folder' onClick={showProjectWindow}>
                 <img className='folderResize' src='./Folder_Icon.svg.png'></img>
             </a>
             <p>{project.name}</p>
+        </div>
+        <ProjectWindowControl />
+        </>
+    );
+
+    function ProjectWindowControl() {
+        return(
+            <div>
+                { show ? <ProjectWindow projectIndex={projectIndex}/> : null }
+            </div>
+        );
+    }
+}
+
+function ProjectWindow( {projectIndex} : {projectIndex:any} ) {
+    const project = projectList[projectIndex];  // Allows project.name to be called
+
+    return(
+        <div className='testBox'>
+            <p>{projectIndex}</p>
+            <p>{project.description}</p>
         </div>
     );
 }

@@ -60,9 +60,9 @@ function ProjectLink( {projectIndex} : {projectIndex:any}) {
 
     return(
         <div className="startLinkStyle">
-        <a className="dropup-item" href={project.link} target="_blank">
-            <p>{project.name}</p>
-        </a>
+            <a className="dropup-item" href={project.link} target="_blank">
+                <p>{project.name}</p>
+            </a>
         </div>
     );
 }

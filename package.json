@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://R4maa.github.io/PortfolioWebsite1",
+  "homepage": "https://R4maa.github.io/PortfolioWebsite1/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d -dist",

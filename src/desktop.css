@@ -45,7 +45,7 @@
     
 }
 
-.testBox {
+.windowBox {
     display: flex;
     width: 50%;
     height: 60vh;
@@ -55,11 +55,13 @@
     left: 40vw;
     top: 10vh;
 
-    background: red;
+    background: linear-gradient(#ffeba3 , #ffe68e);
 
     box-sizing: border-box;
-    border-style: solid;
-    border-width: 10px;
-    border: blue;
-}
 
+    border: 7px solid rgb(0, 76, 255);
+    
+    border-top: 20px solid rgb(0, 76, 255);
+    border-radius: 5px;
+    
+}

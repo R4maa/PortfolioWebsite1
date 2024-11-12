@@ -53,7 +53,7 @@ function ProjectWindow( {projectIndex} : {projectIndex:any} ) {
     const project = projectList[projectIndex];  // Allows project.name to be called
 
     return(
-        <div className='testBox'>
+        <div className='windowBox'>
             <p>{projectIndex}</p>
             <p>{project.description}</p>
         </div>

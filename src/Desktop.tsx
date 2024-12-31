@@ -56,7 +56,7 @@ function ProjectWindow( {projectIndex} : {projectIndex:any} ) {
         <div className='windowPos'>
             <div className='windowTitle'>
                 <p className='projectTitle'>{project.name}</p>
-                <button className='closeButton'> X </button> 
+                <button className='closeButton' onClick={SKIBIDIFUNCTION}> X </button> 
             </div>
             <div className='windowBox'>
                 <p>{projectIndex}</p>

@@ -53,9 +53,15 @@ function ProjectWindow( {projectIndex} : {projectIndex:any} ) {
     const project = projectList[projectIndex];  // Allows project.name to be called
 
     return(
-        <div className='windowBox'>
-            <p>{projectIndex}</p>
-            <p>{project.description}</p>
+        <div className='windowPos'>
+            <div className='windowTitle'> 
+
+                <button className='closeButton'> X </button> 
+            </div>
+            <div className='windowBox'>
+                <p>{projectIndex}</p>
+                <p>{project.description}</p>
+            </div>
         </div>
     );
 }

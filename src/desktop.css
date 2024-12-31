@@ -45,6 +45,16 @@
     
 }
 
+.windowPos {
+    width: 50%;
+    height: 60vh;
+
+    left: 40vw;
+    top: 10vh;
+
+    position: fixed;   
+}
+
 .windowBox {
     display: flex;
     width: 50%;
@@ -53,7 +63,7 @@
 
     position: fixed;
     left: 40vw;
-    top: 10vh;
+    top: 10vh; 
 
     background: linear-gradient(#ffeba3 , #ffe68e);
 
@@ -64,4 +74,30 @@
     border-top: 20px solid rgb(0, 76, 255);
     border-radius: 5px;
     
+}
+
+.closeButton {
+    /* position: fixed; */
+    z-index: 11;
+
+    background-color: red;
+/*     
+    top: 10vh;
+    left: 85vw; */
+    
+    margin-right: auto;
+
+    width: 5%;
+    height: 20px;
+
+    border-style: ridge;
+}
+
+.windowTitle {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    height: 20px;
+    width: 100%;
 }

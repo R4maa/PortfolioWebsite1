@@ -76,8 +76,28 @@
     
 }
 
-.closeButton {
+.windowTitle {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
     z-index: 11;
+
+    height: 20px;
+    width: 100%;
+}
+
+.projectTitle { 
+    /* # TODO MAKE TEXT SMALLER SLIGHTLY */
+    position: relative;
+    left: 5px;
+    
+    width: auto;
+    
+    margin: 0;
+}
+
+.closeButton {
     margin-left: auto;
 
     
@@ -86,13 +106,4 @@
     
     background-color: red;
     border-style: ridge;
-}
-
-.windowTitle {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-
-    height: 20px;
-    width: 100%;
 }

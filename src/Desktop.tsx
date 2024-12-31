@@ -54,8 +54,8 @@ function ProjectWindow( {projectIndex} : {projectIndex:any} ) {
 
     return(
         <div className='windowPos'>
-            <div className='windowTitle'> 
-
+            <div className='windowTitle'>
+                <p className='projectTitle'>{project.name}</p>
                 <button className='closeButton'> X </button> 
             </div>
             <div className='windowBox'>

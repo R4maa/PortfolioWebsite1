@@ -77,19 +77,14 @@
 }
 
 .closeButton {
-    /* position: fixed; */
     z-index: 11;
+    margin-left: auto;
 
-    background-color: red;
-/*     
-    top: 10vh;
-    left: 85vw; */
     
-    margin-right: auto;
-
-    width: 5%;
+    width: 10%;
     height: 20px;
-
+    
+    background-color: red;
     border-style: ridge;
 }
 

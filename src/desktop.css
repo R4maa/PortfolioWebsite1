@@ -71,7 +71,7 @@
 
     border: 7px solid rgb(0, 76, 255);
     
-    border-top: 20px solid rgb(0, 76, 255);
+    border-top: 25px solid rgb(0, 76, 255);
     border-radius: 5px;
     
 }
@@ -90,6 +90,7 @@
 .projectTitle { 
     /* # TODO MAKE TEXT SMALLER SLIGHTLY */
     position: relative;
+    top: 3px;
     left: 5px;
     
     width: auto;

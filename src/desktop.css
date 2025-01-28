@@ -45,7 +45,17 @@
     
 }
 
-.testBox {
+.windowPos {
+    width: 50%;
+    height: 60vh;
+
+    left: 40vw;
+    top: 10vh;
+
+    position: fixed;   
+}
+
+.windowBox {
     display: flex;
     width: 50%;
     height: 60vh;
@@ -53,13 +63,48 @@
 
     position: fixed;
     left: 40vw;
-    top: 10vh;
+    top: 10vh; 
 
-    background: red;
+    background: linear-gradient(#ffeba3 , #ffe68e);
 
     box-sizing: border-box;
-    border-style: solid;
-    border-width: 10px;
-    border: blue;
+
+    border: 7px solid rgb(0, 76, 255);
+    
+    border-top: 25px solid rgb(0, 76, 255);
+    border-radius: 5px;
+    
 }
 
+.windowTitle {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    z-index: 11;
+
+    height: 20px;
+    width: 100%;
+}
+
+.projectTitle { 
+    /* # TODO MAKE TEXT SMALLER SLIGHTLY */
+    position: relative;
+    top: 3px;
+    left: 5px;
+    
+    width: auto;
+    
+    margin: 0;
+}
+
+.closeButton {
+    margin-left: auto;
+
+    
+    width: 10%;
+    height: 20px;
+    
+    background-color: red;
+    border-style: ridge;
+}

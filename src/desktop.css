@@ -86,7 +86,6 @@
 }
 
 .projectTitle { 
-    /* # TODO MAKE TEXT SMALLER SLIGHTLY */
     position: relative;
     top: 3px;
     left: 5px;
@@ -104,6 +103,8 @@
     
     background-color: rgb(255, 0, 0);
     border-style: groove;
+
+    transition: .2s;
 }
 
 .closeButton:hover {

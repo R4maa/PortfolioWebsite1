@@ -39,6 +39,23 @@ function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
         <ProjectWindowControl />
         </>
     );
+    
+    function ProjectWindow( {projectIndex} : {projectIndex:any} ) {
+        const project = projectList[projectIndex];  // Allows project.name to be called
+        
+        return(
+            <div className='windowPos'>
+                <div className='windowTitle'>
+                    <p className='projectTitle'>{project.name}</p>
+                    <button className='closeButton' onClick={showProjectWindow} > X </button> 
+                </div>
+                <div className='windowBox'>
+                    <p>{projectIndex}</p>
+                    <p>{project.description}</p>
+                </div>
+            </div>
+        );
+    }
 
     function ProjectWindowControl() {
         return(
@@ -49,19 +66,3 @@ function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
     }
 }
 
-function ProjectWindow( {projectIndex} : {projectIndex:any} ) {
-    const project = projectList[projectIndex];  // Allows project.name to be called
-
-    return(
-        <div className='windowPos'>
-            <div className='windowTitle'>
-                <p className='projectTitle'>{project.name}</p>
-                <button className='closeButton' onClick={SKIBIDIFUNCTION}> X </button> 
-            </div>
-            <div className='windowBox'>
-                <p>{projectIndex}</p>
-                <p>{project.description}</p>
-            </div>
-        </div>
-    );
-}

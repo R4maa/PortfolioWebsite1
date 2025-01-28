@@ -9,7 +9,7 @@
 .folderExternal {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .folderExternal p {
@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    /* padding-right: 10px; */
+    padding-right: 2px;
 }
 
 .folderResize {
@@ -42,7 +42,7 @@
     justify-content: start;
     width: 40%;
     flex-wrap: wrap;
-    
+    padding-left: 5px;
 }
 
 .windowPos {
@@ -83,7 +83,7 @@
 
     z-index: 11;
 
-    height: 20px;
+    height: 25px;
     width: 100%;
 }
 
@@ -101,10 +101,18 @@
 .closeButton {
     margin-left: auto;
 
-    
     width: 10%;
-    height: 20px;
+    height: 100%;
     
-    background-color: red;
-    border-style: ridge;
+    background-color: rgb(255, 0, 0);
+    border-style: groove;
+}
+
+.closeButton:hover {
+    margin-left: auto;
+
+    width: 10%;
+    height: 100%;
+    
+    background-color: rgb(211, 0, 0);
 }

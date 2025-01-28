@@ -17,7 +17,9 @@
   }
 
   .startButton {
-    width: 150px;
+    /* width: 150px; */
+    min-width: 150px;
+    width: 10%;
     height: 50px;
     background: linear-gradient(rgb(0, 184, 0), green);
 

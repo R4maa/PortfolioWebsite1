@@ -1,9 +1,10 @@
 .background {
-  background-image: url('blissBackground.jpeg');
+  background-image: url('myBackground.JPG');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   min-width: 100vw;
+  image-resolution: 100%;
 }
 
 body {

@@ -24,6 +24,8 @@ function DesktopIcon( {projectIndex} : {projectIndex:any} ) {
     
     const [show, setShow] = useState(false);    // Bool to show project window
 
+    const [cascadeCount, setCount] = useState(10);
+
     function showProjectWindow() {
         setShow(!show);
     }
